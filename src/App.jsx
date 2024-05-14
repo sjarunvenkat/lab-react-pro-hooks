@@ -40,13 +40,13 @@ function App() {
     setTheme(!dark);
   };
 
-  const handleChangeValue = useCallback(() => {
+  const handleChangeValue = () => {
     setValue(value + 1);
-  }, [value]);
+  };
 
-  const handleList = useCallback(() => {
-    setList(testFunction());
-  }, [testFunction]);
+  const handleList = () => {
+    setList(testFunction);
+  };
 
   const styleTheme = useMemo(
     () => ({
